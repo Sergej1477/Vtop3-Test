@@ -1,0 +1,27 @@
+@import "./scss/fonts.scss";
+@import "./scss/colors.scss";
+@import "./scss/breakpoints.scss";
+@import "./scss/typography.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+}
+
+body {
+  background: $background-color;
+  color: $textColor;
+  font-family: $mainFontFamily;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
