@@ -1,0 +1,19 @@
+@import '../typography/button-text.scss';
+
+.btn {
+  cursor: pointer;
+  border: 2px solid $mainBlue;
+  border-radius: 24px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  gap: 8px;
+  &--active {
+    background-color: $mainBlue;
+  }
+  &:hover {
+    @extend .btn--active;
+  }
+}

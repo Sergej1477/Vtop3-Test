@@ -1,0 +1,12 @@
+@import '../../scss/colors.scss';
+
+.button-text {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $textColor;
+  }
