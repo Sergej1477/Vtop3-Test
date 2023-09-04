@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vtop3-test</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__top-panel">
-          <img class="logo" src="./assets/images/logo.png" alt="logo" />
+          <button class="header__mobile-btn">
+            <img src="./assets/images/Menu.svg" alt="ic-menu" />
+          </button>
+          <img class="header__logo" src="./assets/images/logo.png" alt="logo" />
+          <img class="header__img-mobile" src="./assets/images/Icon-Planet.svg" alt="Icon-Planet" />
           <nav class="navigation">
             <ul class="navigation-menu">
               <li class="navigation-menu__item">
@@ -46,8 +50,8 @@
             <button class="btn btn--lang button-text">
               <i class="fa-solid fa-globe" style="color: #478bf9"></i>En
             </button>
-            <button class="btn button-text">Log in</button>
-            <button class="btn button-text">Sign up</button>
+            <button class="btn button-text" onclick="window.location.href = '#';">Log in</button>
+            <button class="btn button-text" onclick="window.location.href = '#';">Sign up</button>
           </div>
         </div>
       </div>
@@ -56,13 +60,211 @@
       <div class="container">
         <div class="promo">
           <div class="promo__text">
-            <h1>House of Gambling</h1>
+            <h1 class="h1">House of <br /><span class="text-blue">Gambling</span></h1>
+            <h4 class="h4 promo__text-item">Raise your ROI with direct advertiser</h4>
+            <button class="btn btn__item button-big" onclick="window.location.href = '#';">
+              Become a Partner
+            </button>
           </div>
-          <div class="promo__icons"></div>
-          <div class="promo__blog"></div>
+          <div class="promo__anime">
+            <div class="icons-block1 animate">
+              <img src="./assets/images/Shield.svg" alt="vector" />
+              <img src="./assets/images/$.svg" alt="vector" />
+              <img src="./assets/images/Soccer.svg" alt="vector" />
+              <img src="./assets/images/M.svg" alt="vector" />
+              <img src="./assets/images/Shield2.svg" alt="vector" />
+              <img src="./assets/images/$.svg" alt="vector" />
+              <img src="./assets/images/Soccer.svg" alt="vector" />
+            </div>
+            <div class="icons-block2 animate2">
+              <img src="./assets/images/M2.svg" alt="vector" />
+              <img src="./assets/images/Timer.svg" alt="vector" />
+              <img src="./assets/images/Crown.svg" alt="vector" />
+              <img src="./assets/images/World.svg" alt="vector" />
+              <img src="./assets/images/M2.svg" alt="vector" />
+              <img src="./assets/images/Timer.svg" alt="vector" />
+              <img src="./assets/images/Crown.svg" alt="vector" />
+            </div>
+            <div class="icons-block3 animate3">
+              <img src="./assets/images/Crown2.svg" alt="vector" />
+              <img src="./assets/images/M.svg" alt="vector" />
+              <img src="./assets/images/Shield2.svg" alt="vector" />
+              <img src="./assets/images/Soccer.svg" alt="vector" />
+              <img src="./assets/images/Shield2.svg" alt="vector" />
+              <img src="./assets/images/Crown.svg" alt="vector" />
+              <img src="./assets/images/M.svg" alt="vector" />
+              <img src="./assets/images/Shield2.svg" alt="vector" />
+            </div>
+          </div>
+          <div class="promo__blog">
+            <h3 class="h3">Blog</h3>
+            <div class="promo__blog--menu">
+              <div class="promo__card promo__link">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur.
+                </p>
+                <p class="text-small">10.02.2023</p>
+              </div>
+              <div class="promo__card">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur.
+                </p>
+                <p class="text-small">10.02.2023</p>
+              </div>
+              <div class="promo__card">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur.
+                </p>
+                <p class="text-small">10.02.2023</p>
+              </div>
+              <div class="promo__card">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur.
+                </p>
+                <p class="text-small">10.02.2023</p>
+              </div>
+              <div class="promo__card">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur.
+                </p>
+                <p class="text-small">10.02.2023</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__panel">
+          <div class="footer__links">
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link text-blue a2">Terms & Conditions</a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link a">Cookies</a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link a">Contacts</a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link a">Careers</a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link a">Brand Guide</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <p class="text-other">Our social media:</p>
+            <div class="social-icons__menu">
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-square-twitter fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-facebook fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-square-instagram fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-linkedin fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-square-youtube fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-tiktok fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link"
+                    ><i class="fa-brands fa-telegram fa-xl"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="social-icons__item">
+                  <a href="#" class="social-icons__link a"><i class="fa-brands fa-vk fa-xl"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <aside class="drawer">
+      <div class="drawer__icons">
+        <img class="drawer__img" src="./assets/images/Icon-Planet.svg" alt="Icon-Planet" />
+        <button class="drawer__close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+      </div>
+      <div class="drawer__user-menu">
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">About us</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">Brands</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">Commissions</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">News</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">Contact us</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="drawer__user-links">
+            <a class="btn button-text2 drawer__item" href="#">Careers</a>
+          </li>
+        </ul>
+        <button class="btn button-text2">Log in</button>
+        <button class="btn button-text2">Sign up</button>
+      </div>
+    </aside>
   </body>
 </html>

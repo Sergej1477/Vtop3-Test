@@ -1,0 +1,43 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.footer {
+  width: 100%;
+  &__panel {
+    height: 140px;
+    border-top: 4px solid $mainBlue;
+    border-radius: 100px;
+    padding: 40px 140px 24px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media screen and (max-width: map-get($breakpoints,'xl')) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      display: flex;
+      align-items: flex-start;
+      padding: 40px;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+    }
+  }
+}
+
+.footer-menu {
+  &__link {
+    &:hover {
+      color: $mainPurple;
+    }
+  }
+}

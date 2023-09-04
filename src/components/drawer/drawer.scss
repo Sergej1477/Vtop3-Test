@@ -1,0 +1,46 @@
+@import '../../scss/colors.scss';
+
+.drawer {
+  background-color: $backgroundLinear;
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  bottom: 0;
+  width: 400px;
+  transition: right 0.5s;
+  &--active {
+    right: 0;
+  }
+  &__close {
+    background-color: transparent;
+    border: none;
+    color: $textColor;
+  }
+  &__user-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    gap: 4px;
+  }
+  &__user-links {
+    list-style: none;
+  }
+  &__item {
+    justify-content: flex-start;
+    padding: 12px 20px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    border: 2px solid $mainBlue;
+    border-radius: 64px;
+    padding: 10px 14px;
+    margin: 8px;
+  }
+  &__img {
+    border: 2px solid $mainBlue;
+    border-radius: 50%;
+    padding: 4px;
+  }
+}

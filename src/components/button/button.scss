@@ -10,6 +10,10 @@
   align-items: center;
   padding: 14px;
   gap: 8px;
+  &__item {
+    padding: 20px 72px;
+    border-radius: 48px;
+  }
   &--active {
     background-color: $mainBlue;
   }
