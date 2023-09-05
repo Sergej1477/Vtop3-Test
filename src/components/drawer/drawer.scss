@@ -17,6 +17,7 @@
     color: $textColor;
   }
   &__user-menu {
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     margin: 12px;
@@ -42,5 +43,8 @@
     border: 2px solid $mainBlue;
     border-radius: 50%;
     padding: 4px;
+  }
+  &__buttons {
+    margin-top: 26px;
   }
 }

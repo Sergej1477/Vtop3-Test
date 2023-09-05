@@ -2,11 +2,13 @@
 @import '../../scss/breakpoints.scss';
 
 .header {
-  height: 120px;
+  min-height: 120px;
   &__top-panel {
-    display: flex;
-    width: 100%;
+    max-width: 1640px;
     padding: 24px 48px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
@@ -57,6 +59,9 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  @media screen and (max-width: map-get($breakpoints,'xxl')) {
+    gap: 12px;
+  }
   @media screen and (max-width: map-get($breakpoints,'xl')) {
     display: none;
   }

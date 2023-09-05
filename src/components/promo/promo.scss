@@ -3,33 +3,63 @@
 
 @keyframes showPromo {
   from {
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
   to {
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 }
 
 @keyframes showPromo2 {
   from {
-    transform: translateY(100px);
+    transform: translateY(80px);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
 }
 
 @keyframes showPromo3 {
   from {
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
   to {
-    transform: translateY(40px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes showPromo4 {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes showPromo5 {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes showPromo6 {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(30px);
   }
 }
 
 .promo {
-  height: 1048px;
+  max-width: 1640px;
+  min-height: 1048px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,9 +67,15 @@
     height: 100%;
     flex-direction: column;
   }
+  &__heading {
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      font-size: 46px;
+      line-height: 50px;
+    }
+  }
   &__text {
     display: flex;
-    width: 669px;
+    max-width: 670px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
@@ -49,7 +85,7 @@
   }
   &__text-item {
     @media screen and (max-width: map-get($breakpoints,'sm')) {
-      width: 500px;
+      max-width: 500px;
       display: flex;
       flex-wrap: wrap;
       text-align: center;
@@ -64,6 +100,9 @@
     @media screen and (max-width: map-get($breakpoints,'xxl')) {
       margin-top: -300px;
       margin-bottom: 24px;
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      margin-top: -150px;
     }
   }
   &__blog--menu {
@@ -81,6 +120,10 @@
     //   background-color: $mainBlue;
     //   border-radius: 10px;
     // }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      max-width: 380px;
+      border-radius: 50px;
+    }
   }
   &__card {
     cursor: pointer;
@@ -95,14 +138,33 @@
     &:hover {
       background-color: $mainBlue;
     }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      border-radius: 40px;
+      padding: 15px 35px;
+    }
   }
   &__anime {
     height: 100%;
     display: flex;
     gap: 18px;
     @media screen and (max-width: map-get($breakpoints,'xxl')) {
-      transform: rotate(0.75turn);
+      transform: rotate(-90deg);
       margin-top: -300px;
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      display: none;
+    }
+  }
+  &__mobile {
+    padding-top: 40px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    @media screen and (min-width: map-get($breakpoints,'md')) {
+      display: none;
     }
   }
 }
@@ -127,6 +189,26 @@
   opacity: 0.4;
 }
 
+.icons-block4 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  opacity: 0.7;
+}
+
+.icons-block5 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.icons-block6 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  opacity: 0.4;
+}
+
 .text-blue {
   color: $mainBlue;
 }
@@ -141,4 +223,16 @@
 
 .animate3 {
   animation: showPromo3 3s linear 3s infinite alternate-reverse;
+}
+
+.animate4 {
+  animation: showPromo4 4s linear 2s infinite alternate;
+}
+
+.animate5 {
+  animation: showPromo5 2s linear 2s infinite alternate;
+}
+
+.animate6 {
+  animation: showPromo6 3s linear 3s infinite alternate-reverse;
 }

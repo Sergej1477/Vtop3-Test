@@ -9,3 +9,4 @@ import './components/promo/promo';
 import './components/footer/footer';
 import './components/social-icons/social-icons';
 import './components/drawer/drawer';
+import './services/firebase.service';
